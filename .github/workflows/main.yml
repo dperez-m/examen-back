@@ -12,8 +12,7 @@ jobs:
           echo "Repositorio: ${{ github.repository }}"
           echo "Rama: ${{ github.ref_name }}"
 
-pushToDockerHub:
-    needs: test-and-lint
+  docker-hub:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
