@@ -1,0 +1,14 @@
+name: CI/CD Pipeline
+
+on: [push]
+
+jobs:
+  showData:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Show data
+        run: |
+          echo "Usuario: ${{ github.actor }}"
+          echo "Repositorio: ${{ vars.GITHUB_REPOSITORY }}"
+          echo "Rama: ${{ vars.GITHUB_REF_NAME }}"
+    
