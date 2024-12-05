@@ -9,6 +9,5 @@ jobs:
       - name: Show data
         run: |
           echo "Usuario: ${{ github.actor }}"
-          echo "Repositorio: ${{ vars.GITHUB_REPOSITORY }}"
-          echo "Rama: ${{ vars.GITHUB_REF_NAME }}"
-    
+          echo "Repositorio: ${{ github.repository }}"
+          echo "Rama: ${{ github.ref_name }}"
