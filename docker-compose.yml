@@ -1,0 +1,9 @@
+services:
+  backend:
+    image: dperezm/examen-back:latest
+    ports:
+      - "8001:8001"
+  frontend:
+    image: dperezm/examen-front:latest
+    ports:
+      - "80:80"
